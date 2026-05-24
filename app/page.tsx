@@ -29,10 +29,12 @@ export default function Home() {
   return (
     <div className="relative w-full h-screen">
       <textarea
-        className="w-full h-screen resize-none bg-transparent text-zinc-100 p-4 text-lg font-mono focus:outline-none"
+        className="w-full h-screen resize-none bg-transparent text-zinc-100 placeholder:text-zinc-600 p-4 text-lg font-mono focus:outline-none"
         value={value}
         onChange={handleChange}
         autoFocus
+        spellCheck={false}
+        placeholder="Start typing — saves automatically. Visit /clear to wipe."
         aria-label="Scratch notes"
       />
       <span className="fixed bottom-2 right-3 text-xs text-zinc-600 pointer-events-none select-none">
