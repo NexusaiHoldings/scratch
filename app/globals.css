@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-zinc-950 text-zinc-100;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+}
